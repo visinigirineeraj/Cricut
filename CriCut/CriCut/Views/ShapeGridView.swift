@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ShapeGridView: View {
+    @ObservedObject var shapeGridViewModel: ShapeGridViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

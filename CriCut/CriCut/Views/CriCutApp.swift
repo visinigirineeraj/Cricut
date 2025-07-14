@@ -11,7 +11,7 @@ import SwiftUI
 struct CriCutApp: App {
     var body: some Scene {
         WindowGroup {
-            ShapeGridView()
+            AppCoordinator().start()
         }
     }
 }

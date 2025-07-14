@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74DDAB742E259E710092BBA0 /* ShapeGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB732E259E680092BBA0 /* ShapeGridViewModel.swift */; };
 		74FEDA962E2584D700CFAE38 /* ShapeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDA932E2584D700CFAE38 /* ShapeGridView.swift */; };
 		74FEDA972E2584D700CFAE38 /* CriCutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDA942E2584D700CFAE38 /* CriCutApp.swift */; };
 		74FEDA982E2584D700CFAE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FEDA922E2584D700CFAE38 /* Assets.xcassets */; };
 		74FEDA992E2584D700CFAE38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FEDA902E2584D700CFAE38 /* Preview Assets.xcassets */; };
 		74FEDAA22E25857A00CFAE38 /* EditCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA12E25857300CFAE38 /* EditCirclesView.swift */; };
+		74FEDAA42E25867800CFAE38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */; };
+		74FEDAA62E25883F00CFAE38 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA52E25883B00CFAE38 /* AppBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74DDAB732E259E680092BBA0 /* ShapeGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeGridViewModel.swift; sourceTree = "<group>"; };
 		74FEDA532E255CB300CFAE38 /* CriCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA632E255CB500CFAE38 /* CriCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA6D2E255CB500CFAE38 /* CriCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +44,8 @@
 		74FEDA932E2584D700CFAE38 /* ShapeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeGridView.swift; sourceTree = "<group>"; };
 		74FEDA942E2584D700CFAE38 /* CriCutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriCutApp.swift; sourceTree = "<group>"; };
 		74FEDAA12E25857300CFAE38 /* EditCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCirclesView.swift; sourceTree = "<group>"; };
+		74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		74FEDAA52E25883B00CFAE38 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74DDAB712E259E3D0092BBA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74DDAB722E259E470092BBA0 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74DDAB722E259E470092BBA0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				74FEDA922E2584D700CFAE38 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		74FEDA4A2E255CB300CFAE38 = {
 			isa = PBXGroup;
 			children = (
@@ -111,16 +133,15 @@
 		74FEDA952E2584D700CFAE38 /* CriCut */ = {
 			isa = PBXGroup;
 			children = (
-				74FEDAA02E25852B00CFAE38 /* ViewModels */,
-				74FEDA9F2E25852100CFAE38 /* Utils */,
-				74FEDA9E2E25850800CFAE38 /* Services */,
-				74FEDA9D2E25850100CFAE38 /* Models */,
-				74FEDA9C2E2584F300CFAE38 /* Views */,
 				74FEDA9B2E2584E800CFAE38 /* Builder */,
 				74FEDA9A2E2584DC00CFAE38 /* Coordinator */,
+				74FEDA9D2E25850100CFAE38 /* Models */,
 				74FEDA912E2584D700CFAE38 /* Preview Content */,
-				74FEDA922E2584D700CFAE38 /* Assets.xcassets */,
-				74FEDA942E2584D700CFAE38 /* CriCutApp.swift */,
+				74DDAB712E259E3D0092BBA0 /* Resources */,
+				74FEDA9E2E25850800CFAE38 /* Services */,
+				74FEDA9F2E25852100CFAE38 /* Utils */,
+				74FEDAA02E25852B00CFAE38 /* ViewModels */,
+				74FEDA9C2E2584F300CFAE38 /* Views */,
 			);
 			path = CriCut;
 			sourceTree = "<group>";
@@ -128,6 +149,7 @@
 		74FEDA9A2E2584DC00CFAE38 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -135,6 +157,7 @@
 		74FEDA9B2E2584E800CFAE38 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				74FEDAA52E25883B00CFAE38 /* AppBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -142,6 +165,7 @@
 		74FEDA9C2E2584F300CFAE38 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74FEDA942E2584D700CFAE38 /* CriCutApp.swift */,
 				74FEDAA12E25857300CFAE38 /* EditCirclesView.swift */,
 				74FEDA932E2584D700CFAE38 /* ShapeGridView.swift */,
 			);
@@ -172,6 +196,7 @@
 		74FEDAA02E25852B00CFAE38 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				74DDAB732E259E680092BBA0 /* ShapeGridViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -327,8 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FEDA962E2584D700CFAE38 /* ShapeGridView.swift in Sources */,
+				74FEDAA42E25867800CFAE38 /* AppCoordinator.swift in Sources */,
+				74FEDAA62E25883F00CFAE38 /* AppBuilder.swift in Sources */,
 				74FEDAA22E25857A00CFAE38 /* EditCirclesView.swift in Sources */,
 				74FEDA972E2584D700CFAE38 /* CriCutApp.swift in Sources */,
+				74DDAB742E259E710092BBA0 /* ShapeGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CriCut/Preview Content\"";
+				DEVELOPMENT_TEAM = V5Z2YQPL9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -510,6 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CriCut/Preview Content\"";
+				DEVELOPMENT_TEAM = V5Z2YQPL9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
