@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		74DDAB742E259E710092BBA0 /* ShapeGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB732E259E680092BBA0 /* ShapeGridViewModel.swift */; };
+		74DDAB762E25A5030092BBA0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB752E25A5000092BBA0 /* Shape.swift */; };
+		74DDAB782E26A0070092BBA0 /* ShapeServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB772E26A0040092BBA0 /* ShapeServicing.swift */; };
+		74DDAB7A2E26A0AF0092BBA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB792E26A0AA0092BBA0 /* Constants.swift */; };
+		74DDAB7E2E26A11B0092BBA0 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB7D2E26A1150092BBA0 /* ErrorHandling.swift */; };
+		74DDAB812E26A3030092BBA0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDAB802E26A2FD0092BBA0 /* Network.swift */; };
 		74FEDA962E2584D700CFAE38 /* ShapeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDA932E2584D700CFAE38 /* ShapeGridView.swift */; };
 		74FEDA972E2584D700CFAE38 /* CriCutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDA942E2584D700CFAE38 /* CriCutApp.swift */; };
 		74FEDA982E2584D700CFAE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FEDA922E2584D700CFAE38 /* Assets.xcassets */; };
 		74FEDA992E2584D700CFAE38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FEDA902E2584D700CFAE38 /* Preview Assets.xcassets */; };
 		74FEDAA22E25857A00CFAE38 /* EditCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA12E25857300CFAE38 /* EditCirclesView.swift */; };
-		74FEDAA42E25867800CFAE38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */; };
+		74FEDAA42E25867800CFAE38 /* AppCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA32E25867100CFAE38 /* AppCoordinating.swift */; };
 		74FEDAA62E25883F00CFAE38 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEDAA52E25883B00CFAE38 /* AppBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		74DDAB732E259E680092BBA0 /* ShapeGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeGridViewModel.swift; sourceTree = "<group>"; };
+		74DDAB752E25A5000092BBA0 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		74DDAB772E26A0040092BBA0 /* ShapeServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeServicing.swift; sourceTree = "<group>"; };
+		74DDAB792E26A0AA0092BBA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74DDAB7D2E26A1150092BBA0 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		74DDAB802E26A2FD0092BBA0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		74FEDA532E255CB300CFAE38 /* CriCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA632E255CB500CFAE38 /* CriCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA6D2E255CB500CFAE38 /* CriCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +54,7 @@
 		74FEDA932E2584D700CFAE38 /* ShapeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeGridView.swift; sourceTree = "<group>"; };
 		74FEDA942E2584D700CFAE38 /* CriCutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriCutApp.swift; sourceTree = "<group>"; };
 		74FEDAA12E25857300CFAE38 /* EditCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCirclesView.swift; sourceTree = "<group>"; };
-		74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		74FEDAA32E25867100CFAE38 /* AppCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinating.swift; sourceTree = "<group>"; };
 		74FEDAA52E25883B00CFAE38 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +112,30 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		74DDAB7B2E26A0FE0092BBA0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				74DDAB802E26A2FD0092BBA0 /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		74DDAB7C2E26A10D0092BBA0 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				74DDAB7D2E26A1150092BBA0 /* ErrorHandling.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		74DDAB822E26A33F0092BBA0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74DDAB772E26A0040092BBA0 /* ShapeServicing.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		74FEDA4A2E255CB300CFAE38 = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +172,7 @@
 				74FEDA9D2E25850100CFAE38 /* Models */,
 				74FEDA912E2584D700CFAE38 /* Preview Content */,
 				74DDAB712E259E3D0092BBA0 /* Resources */,
-				74FEDA9E2E25850800CFAE38 /* Services */,
+				74FEDA9E2E25850800CFAE38 /* Core */,
 				74FEDA9F2E25852100CFAE38 /* Utils */,
 				74FEDAA02E25852B00CFAE38 /* ViewModels */,
 				74FEDA9C2E2584F300CFAE38 /* Views */,
@@ -149,7 +183,7 @@
 		74FEDA9A2E2584DC00CFAE38 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				74FEDAA32E25867100CFAE38 /* AppCoordinator.swift */,
+				74FEDAA32E25867100CFAE38 /* AppCoordinating.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -175,20 +209,25 @@
 		74FEDA9D2E25850100CFAE38 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				74DDAB752E25A5000092BBA0 /* Shape.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		74FEDA9E2E25850800CFAE38 /* Services */ = {
+		74FEDA9E2E25850800CFAE38 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				74DDAB822E26A33F0092BBA0 /* Services */,
+				74DDAB7C2E26A10D0092BBA0 /* ErrorHandling */,
+				74DDAB7B2E26A0FE0092BBA0 /* Networking */,
 			);
-			path = Services;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		74FEDA9F2E25852100CFAE38 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				74DDAB792E26A0AA0092BBA0 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,11 +391,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FEDA962E2584D700CFAE38 /* ShapeGridView.swift in Sources */,
-				74FEDAA42E25867800CFAE38 /* AppCoordinator.swift in Sources */,
+				74FEDAA42E25867800CFAE38 /* AppCoordinating.swift in Sources */,
+				74DDAB812E26A3030092BBA0 /* Network.swift in Sources */,
 				74FEDAA62E25883F00CFAE38 /* AppBuilder.swift in Sources */,
 				74FEDAA22E25857A00CFAE38 /* EditCirclesView.swift in Sources */,
 				74FEDA972E2584D700CFAE38 /* CriCutApp.swift in Sources */,
+				74DDAB7A2E26A0AF0092BBA0 /* Constants.swift in Sources */,
+				74DDAB7E2E26A11B0092BBA0 /* ErrorHandling.swift in Sources */,
+				74DDAB782E26A0070092BBA0 /* ShapeServicing.swift in Sources */,
 				74DDAB742E259E710092BBA0 /* ShapeGridViewModel.swift in Sources */,
+				74DDAB762E25A5030092BBA0 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
