@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// Enum representing shape types
+enum ShapeType: String, Decodable {
+    case circle, square, triangle
+}
+
 /// Represents a dynamic button returned from the API
 struct Shape: Identifiable, Decodable {
     var id: String { name }

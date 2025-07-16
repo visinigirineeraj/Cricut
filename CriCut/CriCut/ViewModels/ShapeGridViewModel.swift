@@ -5,6 +5,7 @@
 //  Created by Seeyon on 14/7/25.
 //
 
+import Combine
 
 ///View model for the shape grid
 class ShapeGridViewModel: ObservableObject {
@@ -21,9 +22,9 @@ class ShapeGridViewModel: ObservableObject {
     /// Loads shape buttons from the api call
     /// Parses the JSON and updates the published `buttons` list
     /// Logs an error if fetching or decoding fails
-    func fetchShapes() {
+    func fetchShapes() async {
         do {
-            shapes = service.fetchShapes()
+            shapes = try await service.fetchShapes()
         } catch {
             print("Error loading buttons: \(error)")
         }

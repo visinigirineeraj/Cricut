@@ -21,8 +21,10 @@ final class AppCoordinator: AppCoordinating {
     }
     
     func start() -> AnyView {
-        NavigationStack {
-            AppBuilder().makeShapeGridView()
-        }
+        AnyView(
+            NavigationStack {
+                AppBuilder().makeShapeGridView()
+            }
+        )
     }
 }

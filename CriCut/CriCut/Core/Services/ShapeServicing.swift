@@ -14,9 +14,9 @@ protocol ShapeServicing {
 
 /// Service layer which delegates API call to the network layer
 class ShapeService: ShapeServicing {
-    private let network: Networking
+    private let network: Network
 
-    init(network: Networking) {
+    init(network: Network) {
         self.network = network
     }
     
@@ -24,5 +24,7 @@ class ShapeService: ShapeServicing {
         guard let url = URL(string: Constants.baseURLString) else {
             throw CricutError.inValidURL
         }
+        let data = try await network.fetch(from: url)
+        return try JSONDecoder().decode([Shape].self, from: data)
     }
 }

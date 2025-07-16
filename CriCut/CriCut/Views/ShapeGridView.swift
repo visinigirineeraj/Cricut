@@ -21,7 +21,3 @@ struct ShapeGridView: View {
         .padding()
     }
 }
-
-#Preview {
-    ContentView()
-}
