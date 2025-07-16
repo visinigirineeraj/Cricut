@@ -10,6 +10,7 @@ import SwiftUI
 /// Abstracts the creation of views
 protocol AppBuilding {
     func makeShapeGridView() -> AnyView
+    func makeEditCirclesView(viewModel: ShapeGridViewModel) -> AnyView
 }
 
 
@@ -21,5 +22,9 @@ struct AppBuilder: AppBuilding {
         let coordinator: AppCoordinator = AppCoordinator()
         let viewModel: ShapeGridViewModel = ShapeGridViewModel(service: service, coordinator: coordinator)
         return AnyView(ShapeGridView(viewModel: viewModel))
+    }
+    
+    func makeEditCirclesView(viewModel: ShapeGridViewModel) -> AnyView {
+        AnyView(EditCirclesView(viewModel: viewModel))
     }
 }

@@ -20,7 +20,7 @@ struct ShapeGridView: View {
                 }
             }
         }
-        .navigationBarTitle("Shapes", displayMode: .inline)
+        .navigationBarTitle(Constants.shapes, displayMode: .inline)
         .padding()
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -30,7 +30,7 @@ struct ShapeGridView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(Constants.editCircles) {
-                    viewModel.didTapEditCircles()
+                    viewModel.editCircleTapped()
                 }
             }
         }
@@ -38,6 +38,9 @@ struct ShapeGridView: View {
             ToolbarItemGroup(placement: .bottomBar) {
                 bottomBar()
             }
+        }
+        .navigationDestination(isPresented: $viewModel.isNavigatingToEdit) {
+            viewModel.editCirclesDestination
         }
         .task {
             await viewModel.fetchShapes()

@@ -10,6 +10,7 @@ import SwiftUI
 /// Protocol defining the required navigation behavior
 protocol AppCoordinating {
     func start() -> AnyView
+    func navigateToEditCirclesView(shapeGridViewModel: ShapeGridViewModel) -> AnyView 
 }
 
 /// The concrete coordinator handling screen navigation
@@ -26,5 +27,9 @@ final class AppCoordinator: AppCoordinating {
                 AppBuilder().makeShapeGridView()
             }
         )
+    }
+    
+    func navigateToEditCirclesView(shapeGridViewModel: ShapeGridViewModel) -> AnyView {
+        AnyView(builder.makeEditCirclesView(viewModel: shapeGridViewModel))
     }
 }

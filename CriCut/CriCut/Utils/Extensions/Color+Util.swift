@@ -8,5 +8,8 @@
 import SwiftUI
 
 extension Color {
-    static var shapeColor: Color = Color(red: 48/255.0, green: 176/255.0, blue: 199/255.0)
+    /// Predefined color used for all shapes
+    static var shapeColor: Color {
+        Color(red: 48/255.0, green: 176/255.0, blue: 199/255.0)
+    }
 }

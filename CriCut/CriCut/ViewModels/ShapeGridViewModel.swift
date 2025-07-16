@@ -6,6 +6,7 @@
 //
 
 import Combine
+import SwiftUI
 
 ///View model for the shape grid
 class ShapeGridViewModel: ObservableObject {
@@ -15,7 +16,7 @@ class ShapeGridViewModel: ObservableObject {
 
     private let service: ShapeServicing
     private let coordinator: AppCoordinating
-    
+    private(set) var editCirclesDestination: AnyView?
 
     init(service: ShapeServicing, coordinator: AppCoordinating) {
         self.service = service
@@ -31,9 +32,10 @@ extension ShapeGridViewModel {
     func clearAll() {
         shapesToDraw.removeAll()
     }
-
-    func didTapEditCircles() {
-//        editCirclesDestination = coordinator.navigateToEditCirclesView(sharedViewModel: self)
+    
+    /// Triggers navigation to the edit circles screen
+    func editCircleTapped() {
+        editCirclesDestination = coordinator.navigateToEditCirclesView(shapeGridViewModel: self)
         isNavigatingToEdit = true
     }
     

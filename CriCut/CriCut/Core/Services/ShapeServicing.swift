@@ -20,6 +20,9 @@ class ShapeService: ShapeServicing {
         self.network = network
     }
     
+    /// Fetches shape buttons container from API..
+    /// - Returns: A decoded array of`Shape` model.
+    /// - Throws: `CricutError.inValidURL` if the URL is invalid or decoding fails.
     func fetchShapes() async throws -> [ShapeModel] {
         guard let url = URL(string: Constants.baseURLString) else {
             throw CricutError.inValidURL
