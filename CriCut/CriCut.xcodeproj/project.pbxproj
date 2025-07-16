@@ -20,6 +20,8 @@
 		74F105212E2774EC00839AF9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F105072E2774EC00839AF9 /* Shape.swift */; };
 		74F105222E2774EC00839AF9 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F104FC2E2774EC00839AF9 /* AppBuilder.swift */; };
 		74F105232E2774EC00839AF9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F105022E2774EC00839AF9 /* Network.swift */; };
+		74F105252E2775CC00839AF9 /* DrawableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F105242E2775C800839AF9 /* DrawableShape.swift */; };
+		74F1052D2E2780D300839AF9 /* Color+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1052C2E2780CD00839AF9 /* Color+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,23 @@
 		74F105122E2774EC00839AF9 /* CriCutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriCutApp.swift; sourceTree = "<group>"; };
 		74F105132E2774EC00839AF9 /* EditCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCirclesView.swift; sourceTree = "<group>"; };
 		74F105142E2774EC00839AF9 /* ShapeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeGridView.swift; sourceTree = "<group>"; };
+		74F105242E2775C800839AF9 /* DrawableShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableShape.swift; sourceTree = "<group>"; };
+		74F105282E277E6300839AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		74F1052C2E2780CD00839AF9 /* Color+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Util.swift"; sourceTree = "<group>"; };
 		74FEDA532E255CB300CFAE38 /* CriCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA632E255CB500CFAE38 /* CriCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FEDA6D2E255CB500CFAE38 /* CriCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CriCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		74F105272E277DD800839AF9 /* Exceptions for "CriCutUITests" folder in "CriCutUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 74FEDA6C2E255CB500CFAE38 /* CriCutUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		74FEDA662E255CB500CFAE38 /* CriCutTests */ = {
@@ -66,6 +81,9 @@
 		};
 		74FEDA702E255CB500CFAE38 /* CriCutUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				74F105272E277DD800839AF9 /* Exceptions for "CriCutUITests" folder in "CriCutUITests" target */,
+			);
 			path = CriCutUITests;
 			sourceTree = "<group>";
 		};
@@ -149,6 +167,7 @@
 		74F105082E2774EC00839AF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				74F105242E2775C800839AF9 /* DrawableShape.swift */,
 				74F105072E2774EC00839AF9 /* Shape.swift */,
 			);
 			path = Models;
@@ -181,6 +200,7 @@
 		74F1050F2E2774EC00839AF9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				74F1052B2E2780BD00839AF9 /* Extensions */,
 				74F1050E2E2774EC00839AF9 /* Constants.swift */,
 			);
 			path = Utils;
@@ -207,6 +227,7 @@
 		74F105162E2774EC00839AF9 /* CriCut */ = {
 			isa = PBXGroup;
 			children = (
+				74F105282E277E6300839AF9 /* Info.plist */,
 				74F104FD2E2774EC00839AF9 /* Builder */,
 				74F104FF2E2774EC00839AF9 /* Coordinator */,
 				74F105062E2774EC00839AF9 /* Core */,
@@ -218,6 +239,14 @@
 				74F105152E2774EC00839AF9 /* Views */,
 			);
 			path = CriCut;
+			sourceTree = "<group>";
+		};
+		74F1052B2E2780BD00839AF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74F1052C2E2780CD00839AF9 /* Color+Util.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		74FEDA4A2E255CB300CFAE38 = {
@@ -384,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F105192E2774EC00839AF9 /* ShapeServicing.swift in Sources */,
+				74F105252E2775CC00839AF9 /* DrawableShape.swift in Sources */,
 				74F1051A2E2774EC00839AF9 /* ShapeGridViewModel.swift in Sources */,
 				74F1051B2E2774EC00839AF9 /* EditCirclesView.swift in Sources */,
+				74F1052D2E2780D300839AF9 /* Color+Util.swift in Sources */,
 				74F1051C2E2774EC00839AF9 /* ErrorHandling.swift in Sources */,
 				74F1051D2E2774EC00839AF9 /* CriCutApp.swift in Sources */,
 				74F1051E2E2774EC00839AF9 /* ShapeGridView.swift in Sources */,
@@ -559,6 +590,7 @@
 				DEVELOPMENT_TEAM = V5Z2YQPL9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CriCut/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -589,6 +621,7 @@
 				DEVELOPMENT_TEAM = V5Z2YQPL9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CriCut/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -650,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CriCutUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.combines.sd.CriCutUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -666,6 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CriCutUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.combines.sd.CriCutUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

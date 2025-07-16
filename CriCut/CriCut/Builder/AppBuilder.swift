@@ -20,6 +20,6 @@ struct AppBuilder: AppBuilding {
         let service: ShapeService = ShapeService(network: network)
         let coordinator: AppCoordinator = AppCoordinator()
         let viewModel: ShapeGridViewModel = ShapeGridViewModel(service: service, coordinator: coordinator)
-        return AnyView(ShapeGridView(shapeGridViewModel: viewModel))
+        return AnyView(ShapeGridView(viewModel: viewModel))
     }
 }

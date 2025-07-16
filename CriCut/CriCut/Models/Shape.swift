@@ -7,13 +7,13 @@
 
 import Foundation
 
-/// Enum representing shape types
-enum ShapeType: String, Decodable {
-    case circle, square, triangle
+// Supporting struct to decode the JSON structure
+struct ShapeResponse: Decodable {
+    let buttons: [ShapeModel]
 }
 
 /// Represents a dynamic button returned from the API
-struct Shape: Identifiable, Decodable {
+struct ShapeModel: Identifiable, Decodable {
     var id: String { name }
     let name: String
     let drawPath: ShapeType

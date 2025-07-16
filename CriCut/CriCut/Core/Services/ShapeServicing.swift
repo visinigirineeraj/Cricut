@@ -9,7 +9,7 @@ import Foundation
 
 /// Abstract protocol for shape fetching service
 protocol ShapeServicing {
-    func fetchShapes() async throws -> [Shape]
+    func fetchShapes() async throws -> [ShapeModel]
 }
 
 /// Service layer which delegates API call to the network layer
@@ -20,11 +20,12 @@ class ShapeService: ShapeServicing {
         self.network = network
     }
     
-    func fetchShapes() async throws -> [Shape] {
+    func fetchShapes() async throws -> [ShapeModel] {
         guard let url = URL(string: Constants.baseURLString) else {
             throw CricutError.inValidURL
         }
         let data = try await network.fetch(from: url)
-        return try JSONDecoder().decode([Shape].self, from: data)
+        let model = try JSONDecoder().decode(ShapeResponse.self, from: data)
+        return model.buttons
     }
 }
